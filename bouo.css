@@ -310,5 +310,13 @@ footer{
     #bare{
         display: flex;
     }
+    footer{
+        font-size: 10px;
+        padding: 5px;
+        
+    }
+    .fot1{
+        margin-top: 10px;
+    }
     
 }
