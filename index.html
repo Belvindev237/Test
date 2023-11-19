@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <link rel="stylesheet" href="bouo.css">
     <link rel="stylesheet" href="fontawesome/all.min.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="menu">
+    <div class="menu"> 
         <h1 class="mig"> BELVA GROUP</h1>
-        <i class="fa-solid fa-bars fa-2xl bar"></i>
+        <i class=" fa-solid fa-bars fa-2xl" id="bare"></i>
        <div class="menu1">
-        <a href="#" class="nav-link"> <i class="fa-solid fa-phone"></i>Contacts</a>
-        <a href="#" class="btn nav-link" role="button"> <button class="reserv">Reservation</button></a>
+        <a href="#" class="nav-link" id="contact"> <i class="fa-solid fa-phone"></i>Contacts</a>
+        <a href="#" class="btn nav-link" role="button"> <button class="reserv">RESERVER</button></a>
        </div>
    </div>
     <div class="menu-burger">
         <img class="logo" src="image/logo.png" alt="">
+        
         <ul class="burger-liste">
             <li class="menu-items"><a href="#">chambres</a></li>
             <li class="menu-items"><a href="#">Services</a></li>
@@ -25,8 +26,6 @@
             <li class="menu-items"><a href="#">Restaurant</a></li>
         </ul>
     </div>
-   
-
     <div class="presentation">
         <h2 class="slog1">Avec Belva Group vous avez une autre dimension du confort!!!!</h2>
        
@@ -157,18 +156,7 @@
         <p class="p1">&copy;2023 All right Reserved</p>
         <p>Powered by Global Busnes & Tech</p>
     </footer>
-    <nav class="nav-respon">
-        <div class="toggle-btn">
-            <i class="fa-solid fa-bars"></i>
-            <ul class="respon">
-                <li><a href="#">Chambre</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Evenements</a></li>
-                <li><a href="#">Restaurant</a></li>
-            </ul>
-        </div>
-
-    </nav>
+    
     <script>
         var content_carousel=document.querySelectorAll('.image');
         var prev=document.querySelectorAll('#gauche');
@@ -202,6 +190,16 @@
             }
             content_carousel[1].style.transform='translatex('+translate+'%)';
         });
+        var tog=document.querySelector('#bare');
+        var res=document.querySelector('.respon');
+        tog.addEventListener('click',()=>{
+            if(res.style.display =='none'){
+                res.style.display ='block';
+            }
+            else{
+                res.style.display ='none';
+            }
+        })
     </script>
 </body>
 </html>
