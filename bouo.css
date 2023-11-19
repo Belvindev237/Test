@@ -1,5 +1,5 @@
 body{
-    margin: 0%;
+    margin: 0;
     text-decoration: none;
     background-attachment: fixed;
 }
@@ -165,6 +165,7 @@ color: #fffffe;
     justify-content: center;
     align-items: center;
     margin-top: 0;
+    padding: 10px;
 }
 .res{
     background-color: #1ad1d1;
@@ -194,6 +195,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 15px;
 }
 .rese{
     width: 45%;
@@ -302,7 +304,7 @@ footer{
         
     }
     .slog1{
-        font-size: 25px;
+        font-size: 30px;
     }
     #contact{
         display: none;
@@ -318,6 +320,9 @@ footer{
     .fot1{
         margin-top: 10px;
     }
-  
+    .presentation{
+        height: 100px;
+    }
+ 
     
 }
