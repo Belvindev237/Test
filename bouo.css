@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     text-decoration: none;
+    background-attachment: fixed;
 }
 .menu{
     display: flex;
