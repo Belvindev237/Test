@@ -6,7 +6,7 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: teal;
-    position: fixed;
+   /* // position: fixed; */
     z-index: 100;
     width: 100%;
     
@@ -38,6 +38,7 @@ body{
     font-size: 25px;
     margin-right: 5px;
     margin-bottom: 7px;
+    border-radius: 5px;
 }
 .mig{
     margin-top: 10px; 
@@ -69,16 +70,20 @@ body{
     margin-top: 2px;
 }
 .box1{
-   display: flex;
+    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   align-items: center;
+   align-items: center; 
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    grid-gap: 2px; */
 }
 .box{
-    height: 300px;
+     height: 300px;
     width: 45%;
     /* border: 1px red solid; */
-    margin: 5px;
+    margin: 5px; 
+    
 }
 .carousel .image{
     display: flex;
@@ -126,9 +131,9 @@ body{
 }
 .menu-burger{
     background-color: teal;
-    height: 100px;
-    padding-top: 50px;
-    position: fixed;
+    height: 80px;
+    padding-top: 40px;
+    /* position: fixed; */
     width: 100%;
     z-index: 99;
     border-bottom: 1px white solid;
@@ -224,6 +229,25 @@ footer{
     color: rgba(0, 255, 76, 0.836);
 
 }
+#bare{
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+
+    display: none;
+}
+.respon{
+    display: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.respon li{
+    padding-left: 15px;
+}
 .nav-respon{
     display: none;
 }
@@ -231,6 +255,10 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+.respon{
+    display: none;
+}
+
 @media screen and (max-width:600px) {
     .menu-burger .burger-liste{
         display: none;
@@ -247,13 +275,14 @@ footer{
     .bar{
         opacity: 1;
     }
+    
     .logo{
         display: flex;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         justify-content: center;
         align-items: center;
-        margin-left: 40%;
+        margin-left: 35%;
         opacity: 1;
     }
     .nav-link{
@@ -261,8 +290,24 @@ footer{
     }
     .reserv{
         font-style: 15px;
+        color: red;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 80px;
+        font-size: 10px;
+        height: 30px;
         
         
+    }
+    .slog1{
+        font-size: 25px;
+    }
+    #contact{
+        display: none;
+    }
+    #bare{
+        display: flex;
     }
     
 }
