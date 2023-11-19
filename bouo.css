@@ -67,8 +67,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15px;
-    margin-top: 2px;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+   
 }
 .box1{
     display: flex;
