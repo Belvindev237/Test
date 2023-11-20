@@ -69,8 +69,8 @@ body{
     align-items: center;
     position: absolute;
     top: 250px;
+    font-family: serif;
     left: 50px;
-    font-family: Tangerine, serif;
    
 }
 .box1{
@@ -81,6 +81,15 @@ body{
     /* display: grid;
     grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
     grid-gap: 2px; */
+}
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box3{
+    margin: 5px;
+    width: auto;
+    
 }
 .box{
      height: 300px;
@@ -132,7 +141,6 @@ body{
     margin-left: 10px;
     margin-top: 0;
     padding: 15px;
-    font-family: 'Poppins', sans-serif;
 }
 .menu-burger{
     background-color: teal;
@@ -308,7 +316,7 @@ footer{
         
     }
     .slog1{
-        font-size: 48px;
+        font-size: 30px;
     }
     #contact{
         display: none;
@@ -324,10 +332,9 @@ footer{
     .fot1{
         margin-top: 10px;
     }
-      .presentation{
-        height:100px;
+    .presentation{
+        height: 100px;
     }
-    
  
     
 }
