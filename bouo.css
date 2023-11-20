@@ -91,6 +91,9 @@ body{
     width: auto;
     
 }
+.box3 img{
+    width: 100%;
+}
 .box{
      height: 300px;
     width: 45%;
