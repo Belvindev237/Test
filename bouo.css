@@ -70,8 +70,9 @@ body{
     align-items: center;
     position: absolute;
     top: 250px;
-    font-family: serif;
+    font-family: 'Tangerine', serif;
     left: 50px;
+    right:10px;
    
 }
 .box1{
@@ -86,6 +87,7 @@ body{
 .box2{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 .box3{
     margin: 5px;
@@ -94,6 +96,7 @@ body{
 }
 .box3 img{
     width: 100%;
+    height: 90%;
 }
 .box{
      height: 300px;
@@ -126,7 +129,7 @@ body{
     padding-left: 5px;
     top: 150px;
     cursor: pointer;
-    color: blue;
+    color: teal;
 }
 #droite{
     float: right;
@@ -145,12 +148,13 @@ body{
     margin-left: 10px;
     margin-top: 0;
     padding: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 .menu-burger{
     background-color: teal;
     height: 80px;
-    padding-top: 40px;
-    /* position: fixed; */
+    padding-top: 50px;
+    position: fixed;
     width: 100%;
     z-index: 99;
     border-bottom: 1px white solid;
@@ -182,6 +186,7 @@ color: #fffffe;
     align-items: center;
     margin-top: 0;
     padding: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 .res{
     background-color: #1ad1d1;
@@ -277,10 +282,84 @@ footer{
 .respon{
     display: none;
 }
+.menu-hamburger ul{
+    display: block;
+    list-style: none;
+}
+.menu-hamburger ul li{
+    font-size: 35px;
+    color: teal;
+    padding-bottom: 25px;
+}
+.menu-hamburger{
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    width: 250px;
+    height: 500px;
+    left: -250px;
+    display: block;
+    transition: left 1s ease;
+    /* left:-250px; */
+}
+#close{
+    position: absolute;
+    top: 15px;
+    right: 8px;
+   
+}
+.menu-hamburger.active{
+    left: 0;
+}
+.foot-items{
+    list-style-type: none;
+}
+.formulaire{
+    display: none;
+    z-index: 100;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    opacity:0.8;
+    position: absolute;
+    top: 150px;
+    left: 40%;
+    right: 20%;
+    transition:  1s ease;
+}
+.formulaire form{
+    margin-left: 40px;
+    display: block;
+    
+}
+.formulaire form input{
+    margin-top: 20px;
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    background-color: rgba(245, 245, 220, 0.911);
+}
+.formulaire .bouton-form{
+    border-radius: 5px;
+    display: flex;
+    margin-left: 90px;
+    margin-top: 25px;
+    height:30px;
+    padding-top: 5px;
+    background-color: rgb(0, 128, 128);
+    color: red;
+    width: 100px;
+    font-weight: bold;
+}
 
 @media screen and (max-width:600px) {
     .menu-burger .burger-liste{
-        display: none;
+       display: none;
+
+
+
     }
     .nav-respon{
         display: flex;
@@ -329,15 +408,42 @@ footer{
         display: flex;
     }
     footer{
-        font-size: 10px;
+        font-size: 20px;
         padding: 5px;
         
     }
     .fot1{
         margin-top: 10px;
+        display: block;
     }
     .presentation{
         height: 100px;
+    }
+    .fin{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .fin .p2{
+        margin-left: 15px;
+    }
+    .fot1 h3{
+        color: darkgray;
+    }
+    .formulaire{
+        width: 200px;
+        left:22%;
+        height: 250px;
+
+    }
+    .formulaire h1{
+        font-size: 20px;
+    }
+    .formulaire form input{
+        margin: 2px;
+    }
+    .formulaire .bouton-form{
+        margin-left: 50px;
     }
  
     
