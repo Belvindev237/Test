@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&family=Tangerine&display=swap');
+  </style>
     <link rel="stylesheet" href="bouo.css">
     <link rel="stylesheet" href="fontawesome/all.min.css">
     <title>Document</title>
@@ -13,9 +22,33 @@
         <i class=" fa-solid fa-bars fa-2xl" id="bare"></i>
        <div class="menu1">
         <a href="#" class="nav-link" id="contact"> <i class="fa-solid fa-phone"></i>Contacts</a>
-        <a href="#" class="btn nav-link" role="button"> <button class="reserv">RESERVER</button></a>
+        <a href="#" class=" popup btn nav-link" role="button"> <button class="reserv">RESERVER</button></a>
        </div>
    </div>
+   <div class="formulaire">
+    <h1 style="color: teal; display: flex;justify-content: center;padding-left: 15px; opacity: 1;">RESERVATION</h1>
+    <form action="">
+        <input type="text" placeholder="Du 21/11/2023">
+        <input type="text" placeholder="Au 21/11/2023">
+        <input type="text" placeholder="nombre place">
+        <input type="text" placeholder=" votre Budget maximal">
+        
+    </form>
+    <button class="bouton-form">RESERVER</button>
+   </div>
+   <div class="menu-hamburger">
+    <i class=" fa-regular fa-circle-xmark " id="close"></i>
+    <!-- <h6 class="close">close</h6> -->
+         <ul>
+            <li>Chambres</li>
+            <li>Services</li>
+            <li>Restaurant</li>
+            <li>Contacts</li>
+            <li>A Propos </li>
+         </ul>
+         
+   </div>
+   
     <div class="menu-burger">
         <img class="logo" src="image/logo.png" alt="">
         
@@ -27,7 +60,7 @@
         </ul>
     </div>
     <div class="presentation">
-        <h2 class="slog1">Avec Belva Group vous avez une autre dimension du confort!!!!</h2>
+        <p class="slog1">Avec Belva Group vous avez une autre dimension du confort!!!!</p>
        
     </div>
     <div class="slog2">
@@ -35,7 +68,7 @@
              et savourez une experience unique en plein coeur de la ville de dschang</p>
     </div>
     <div>
-        <h1 class="haut">Des chambres Haute gamme chez BELVA palace</h1>
+        <h1 class="haut" style="font-family: 'Poppins', sans-serif;">Des chambres Haute gamme chez BELVA palace</h1>
         <div class="box1">
             <div class="box">
                 <section class="carousel">
@@ -90,13 +123,13 @@
         
     <div class="box2">
         <div class="box3">
-            <h3>Un service d'acceuil adapté</h3>
+            <h3 style="font-family: 'Poppins', sans-serif;">Un service d'acceuil adapté</h3>
             <img src="image/recep.jpg" alt="">
 
         </div>
         <div class="box3">
-            <h3>Un parking securisé</h3>
-            <img src="image/par.jpeg" alt="">
+            <h3 style="font-family: 'Poppins', sans-serif;">Un parking securisé</h3>
+            <img src="image/parking-lot.jpg" alt="">
 
         </div>
     </div>
@@ -104,6 +137,22 @@
         <h3>ET c'est n'est pas tous chez BELVA Palace Hotel nous disposons d'un Restaurant, d'une
             Boulangerie et d'un Lounge pour un epanouissement total de nos clients</h3>
         
+    </section>
+    <div class="box2">
+        <div class="box3">
+            <h3 style="font-family: 'Poppins', sans-serif;">Un restaurant VIP</h3>
+            <img src="image/resto.jpg" alt="">
+
+        </div>
+        <div class="box3">
+            <h3 style="font-family: 'Poppins', sans-serif;">Des salle de conferences</h3>
+            <img src="image/bo.jpg" alt="">
+
+        </div>
+    </div>
+    <section class="slog4">
+        <h3>Reserve ta chambre pour un sejour agreable chez Belva palace hotel</h3>
+        <a href="#"><button class="res">RESERVER</button></a>
     </section>
     <!-- <div class="resto-bou">
         <div class=" rese resto1"><h1>DES RESTAURANT DE CLASSE</h1><img src="image/resto.jpg" alt=""></div>
@@ -117,14 +166,14 @@
         </div>
         <div>
             <h3>information sur l'hotel</h3>
-            <ul>
+            <ul class="foot-items">
                 <li>A propos</li>
                 <li>Services</li>
             </ul>
         </div>
         <div>
              <h3>Reseaux sociaux</h3>
-             <ul>
+             <ul class="foot-items">
                 <li>Belva Palace officiel</li>
                 <li>Belvapalace insta</li>
                 <li>Belvinpalace@gmail.com</li>
@@ -133,10 +182,12 @@
     </footer>
     <footer class="fin">
         <p class="p1">&copy;2023 All right Reserved</p>
-        <p>Powered by Global Busnes & Tech</p>
+        <p class="p2">Powered by Global Busnes & Tech</p>
     </footer>
+    <script src="script.js"></script>
+   
     
-    <script>
+    <!-- <script>
         var content_carousel=document.querySelectorAll('.image');
         var prev=document.querySelectorAll('#gauche');
         var next=document.querySelectorAll('#droite');
@@ -170,15 +221,52 @@
             content_carousel[1].style.transform='translatex('+translate+'%)';
         });
         var tog=document.querySelector('#bare');
-        var res=document.querySelector('.respon');
+        var res=document.querySelector('.menu-hamburger');
+        var ferme=document.querySelector('#close');
         tog.addEventListener('click',()=>{
-            if(res.style.display =='none'){
-                res.style.display ='block';
+            res.classList.add("active");
+
+            // if(res.style.left =='0'){
+            //     res.style.left ='-250';
+            // }
+            // else{
+            //     res.style.left ='0';
+            // }
+            
+            
+        })
+        ferme.addEventListener('click',()=>{
+            res.classList.remove("active");
+        })      
+        // var res=document.querySelector('.menu-hamburger');
+        // ferme.addEventListener('click',()=>{
+        //     if(res.style.left =='-250'){
+        //         res.style.left ='0';
+        //     }
+        //     else{
+        //         res.style.left ='-250';
+        //     }
+            
+        // })
+        var pope=document.querySelector('.popup');
+        var forme=document.querySelector('.formulaire');
+        pope.addEventListener('click',()=>{
+            if(forme.style.display=='block'){
+                forme.style.display='none';
             }
             else{
-                res.style.display ='none';
+                forme.style.display='block'
             }
         })
-    </script>
+        var btn=document.querySelector('.bouton-form');
+        btn.addEventListener('click',()=>{
+            if(forme.style.display=='block'){
+                forme.style.display='none';
+            }
+            else{
+                forme.style.display='block'
+            }
+        })
+    </script> -->
 </body>
 </html>
